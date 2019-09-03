@@ -1,22 +1,32 @@
 
+import random
+
+def randomize(Words):
+    random.shuffle(Words)
+
+
 print("Enter 3 Verbs")
 Verbs = [input(),input(),input()]
-
+randomize(Verbs)
 
 print("Enter 2 Nouns")
 Nouns = [input(),input()]
+randomize(Nouns)
 
 print("Enter a Adverb")
 Adverb = [input()]
+randomize(Adverb)
 
 print("Enter a Pronoun")
 Pronoun = [input()]
+randomize(Pronoun)
+
 
 
 
 def show():
 
-    print("You wake up" + Verbs[0] + " Staring at the wall")
+    print("You wake up " + Verbs[0] + " Staring at the wall")
     print("Then a " + Nouns[0] + " comes and blows the roof of the house that you are in")
     print("You " + Verbs[1] + " and now you are in space")
     print(Adverb[0] + " you take a deep breath and you are in a war zone")
